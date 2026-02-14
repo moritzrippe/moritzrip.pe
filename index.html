@@ -55,6 +55,7 @@ body {
     font-family: 'CopyFont', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
+    /* Bleibt wie gewünscht auf f0f0f0 */
     background-color: #f0f0f0;
 }
 
@@ -117,6 +118,13 @@ h1 {
     -webkit-user-drag: none;
     user-select: none;
     pointer-events: none;
+}
+
+/* NEU: Wrapper für den weißen Hintergrund unter dem Header */
+.content-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    overflow: hidden; /* Verhindert Margin-Collapse */
 }
 
 .content {
@@ -240,44 +248,46 @@ h1 {
     </div>
 </section>
 
-<section class="content">
+<div class="content-wrapper">
+    <section class="content">
 
-    <div class="project-item">
-        <h3>Thoma & Co.</h3>
-        
-        <p>
-            Ich habe die Marke <a href="https://mouleina.com" target="_blank">Thoma & Co.</a> ins Leben gerufen, um praktisch zu erleben, worauf es beim Aufbau einer Marke wirklich ankommt – 
-            von der Produktentwicklung über Herstellung, Branding und Positionierung bis hin zur digitalen Präsenz. Mein Ziel war es, eine Marke zu schaffen, 
-            die langfristig eine klare Identität vermittelt und mit bestimmten Werten und Assoziationen verbunden wird.
-        </p>
+        <div class="project-item">
+            <h3>Thoma & Co.</h3>
+            
+            <p>
+                Ich habe die Marke <a href="https://mouleina.com" target="_blank">Thoma & Co.</a> ins Leben gerufen, um praktisch zu erleben, worauf es beim Aufbau einer Marke wirklich ankommt – 
+                von der Produktentwicklung über Herstellung, Branding und Positionierung bis hin zur digitalen Präsenz. Mein Ziel war es, eine Marke zu schaffen, 
+                die langfristig eine klare Identität vermittelt und mit bestimmten Werten und Assoziationen verbunden wird.
+            </p>
 
-        <p class="no-margin">
-            Mein Vorgehen umfasste folgende Schritte:
-        </p>
+            <p class="no-margin">
+                Mein Vorgehen umfasste folgende Schritte:
+            </p>
 
-        <p>
-            1. Markenstrategie entwickeln: Ich habe zunächst analysiert, welche Positionierung meine Marke haben soll – von Luxus bis Massenmarkt, von Hochpreis- bis Niedrigpreisstrategie – 
-            und eine SWOT-Analyse erstellt, um Chancen und Risiken zu verstehen.
-        </p>
+            <p>
+                1. Markenstrategie entwickeln: Ich habe zunächst analysiert, welche Positionierung meine Marke haben soll – von Luxus bis Massenmarkt, von Hochpreis- bis Niedrigpreisstrategie – 
+                und eine SWOT-Analyse erstellt, um Chancen und Risiken zu verstehen.
+            </p>
 
-        <p>
-            2. Produktkonzept: Ich habe entschieden, welche Produkte angeboten werden sollen, z. B. physische Objekte aus Ton oder Holz, und wie diese gestaltet sein könnten.
-        </p>
+            <p>
+                2. Produktkonzept: Ich habe entschieden, welche Produkte angeboten werden sollen, z. B. physische Objekte aus Ton oder Holz, und wie diese gestaltet sein könnten.
+            </p>
 
-        <p>
-            3. Herstellung und Design: Den gesamten Produktionsprozess habe ich selbst vollzogen – vom Ton auswählen, formen, brennen und glasieren bis hin zu ansprechendem Design.
-        </p>
+            <p>
+                3. Herstellung und Design: Den gesamten Produktionsprozess habe ich selbst vollzogen – vom Ton auswählen, formen, brennen und glasieren bis hin zu ansprechendem Design.
+            </p>
 
-        <p>
-            4. Branding und Kommunikation: Ich habe die Produkte fotografiert, eine Website aufgebaut und den passenden Ton of Voice für die digitale Markenkommunikation entwickelt.
-        </p>
+            <p>
+                4. Branding und Kommunikation: Ich habe die Produkte fotografiert, eine Website aufgebaut und den passenden Ton of Voice für die digitale Markenkommunikation entwickelt.
+            </p>
 
-        <p>
-            5. Markteinführung und Werbung: Abschließend habe ich die Produkte online präsentiert und über verschiedene Kanäle beworben, um Reichweite und Sichtbarkeit zu erzeugen.
-        </p>
-    </div>
+            <p>
+                5. Markteinführung und Werbung: Abschließend habe ich die Produkte online präsentiert und über verschiedene Kanäle beworben, um Reichweite und Sichtbarkeit zu erzeugen.
+            </p>
+        </div>
 
-</section>
+    </section>
+</div>
 
 </body>
 </html>
