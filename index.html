@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="moritz.png">
+<meta name="theme-color" content="#f0f0f0">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<title>Moritz Rippe</title>
+<meta name="description" content="Copyright © 2026 Moritz Rippe. All rights reserved.">
+
+<meta property="og:title" content="Moritz Rippe">
+<meta property="og:description" content="Copyright © 2026 Moritz Rippe. All rights reserved.">
+<meta property="og:image" content="moritz.png">
+<meta property="og:type" content="website">
+
+<style>
+
+@font-face {
+    font-family: 'HeadFont';
+    src: url('fonthead.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CopyFont';
+    src: url('fontcopy.otf') format('opentype');
+}
+
+:root {
+    --text-primary: #000000;
+    --text-secondary: #555555;
+    --background-light: rgb(240, 240, 240);
+    --divider: #e5e5e5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'CopyFont', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    background: white;
+}
+
+.header {
+    background: var(--background-light);
+    width: 100%;
+}
+
+.header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 24px 0 24px; 
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: end; 
+    gap: 80px;
+}
+
+.header-text {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'HeadFont', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.links {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 18px; 
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 520px;
+    color: var(--text-secondary);
+}
+
+.header img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.content {
+    max-width: 900px;
+    margin: 30px auto 65px auto;
+    padding: 0 24px;
+}
+
+.project-item {
+    padding: 0;
+    border-top: 1px solid var(--divider);
+    padding-bottom: 60px;
+}
+
+.project-item:first-of-type {
+    border-top: none;
+}
+
+.project-item h3 {
+    font-family: 'HeadFont', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 14px 0;
+}
+
+.project-item h3 a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.project-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-item p {
+    margin: 0 0 40px 0; 
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 680px;
+}
+
+.project-item p.no-margin {
+    margin-bottom: 10px;
+}
+
+.project-item p:last-of-type {
+    margin-bottom: 0;
+}
+
+.project-item p a {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .header-inner {
+        grid-template-columns: 1fr;
+        padding: 30px 24px 0 24px;
+        gap: 0px; 
+        align-items: start;
+    }
+
+    .header-text {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .content {
+        margin: 30px auto 55px auto;
+    }
+
+    .project-item h3 {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+    }
+
+    .project-item p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    
+    .project-item p.no-margin {
+        margin-bottom: 5px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="header">
+    <div class="header-inner">
+        <div class="header-text">
+            <h1>Moritz Rippe</h1>
+
+            <div class="links">
+                <a href="mailto:rippemoritz@icloud.com">Mail</a>
+                <a href="https://www.linkedin.com/in/moritzr" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="intro">
+                Ich interessiere mich für den Aufbau und die strategische Pflege von Marken 
+                und arbeite gerne an eigenen Projekten,um Marketing, 
+                Positionierung und digitale Kommunikation praktisch zu erlernen.
+            </div>
+        </div>
+
+        <div>
+            <img src="moritz.png" alt="Moritz" draggable="false">
+        </div>
+    </div>
+</section>
+
+<section class="content">
+
+    <div class="project-item">
+        <h3>Thoma & Co.</h3>
+        
+        <p>
+            Ich habe die Marke <a href="https://mouleina.com" target="_blank">Thoma & Co.</a> ins Leben gerufen, um praktisch zu erleben, worauf es beim Aufbau einer Marke wirklich ankommt – 
+            von der Produktentwicklung über Herstellung, Branding und Positionierung bis hin zur digitalen Präsenz. Mein Ziel war es, eine Marke zu schaffen, 
+            die langfristig eine klare Identität vermittelt und mit bestimmten Werten und Assoziationen verbunden wird.
+        </p>
+
+        <p class="no-margin">
+            Mein Vorgehen umfasste folgende Schritte:
+        </p>
+
+        <p>
+            1. Markenstrategie entwickeln: Ich habe zunächst analysiert, welche Positionierung meine Marke haben soll – von Luxus bis Massenmarkt, von Hochpreis- bis Niedrigpreisstrategie – 
+            und eine SWOT-Analyse erstellt, um Chancen und Risiken zu verstehen.
+        </p>
+
+        <p>
+            2. Produktkonzept: Ich habe entschieden, welche Produkte angeboten werden sollen, z. B. physische Objekte aus Ton oder Holz, und wie diese gestaltet sein könnten.
+        </p>
+
+        <p>
+            3. Herstellung und Design: Den gesamten Produktionsprozess habe ich selbst vollzogen – vom Ton auswählen, formen, brennen und glasieren bis hin zu ansprechendem Design.
+        </p>
+
+        <p>
+            4. Branding und Kommunikation: Ich habe die Produkte fotografiert, eine Website aufgebaut und den passenden Ton of Voice für die digitale Markenkommunikation entwickelt.
+        </p>
+
+        <p>
+            5. Markteinführung und Werbung: Abschließend habe ich die Produkte online präsentiert und über verschiedene Kanäle beworben, um Reichweite und Sichtbarkeit zu erzeugen.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
