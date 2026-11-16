@@ -16,7 +16,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-<title>Moritz</title>
+<title>Moritz Rippe</title>
 
 <meta name="description" content="Copyright © 2026 Moritz Rippe. All rights reserved.">
 <meta property="og:title" content="Moritz Rippe">
@@ -244,6 +244,10 @@ h1 {
         margin-bottom: 5px;
     }
 }
+
+#changing-text {
+    transition: opacity 0.4s ease;
+}
 </style>
 </head>
 
@@ -252,7 +256,8 @@ h1 {
 <section class="header">
     <div class="header-inner">
         <div class="header-text">
-            <h1>MORITZ RIPPE</h1>
+
+    <h1 id="changing-text">MORITZ RIPPE</h1>
 
             <div class="links">
                 <a href="mailto:mrippe@mouleina.com">Mail</a>
@@ -292,5 +297,49 @@ h1 {
 <div class="footer">
                 Copyright © Moritz Rippe. All rights reserved.
             </div>
+
+            <script>
+
+    const greetings = [
+
+        "MORITZ RIPPE",
+
+        "HALLO",
+
+        "MOIN",
+
+        "GRÜß DICH",
+
+        "SERVUS",
+
+        "HOI",
+
+        "GRIAß DI",
+
+        "BONJOUR"
+
+    ];
+
+    let currentIndex = 0;
+
+    const heading = document.getElementById("changing-text");
+
+    setInterval(() => {
+
+        heading.style.opacity = "0";
+
+        setTimeout(() => {
+
+            currentIndex = (currentIndex + 1) % greetings.length;
+
+            heading.textContent = greetings[currentIndex];
+
+            heading.style.opacity = "1";
+
+        }, 300);
+
+    }, 4000);
+
+</script>
 </body>
 </html>
